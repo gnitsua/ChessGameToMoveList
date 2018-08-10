@@ -35,7 +35,7 @@ def game_to_move_converter(game_string, only_white=False):
             returnval += move[0:2].upper() + '\n'# print move using final position notation
             returnval += move + '\n'
         white_move = not white_move
-    return returnval
+    return returnval[:-1]
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog='main.py')
